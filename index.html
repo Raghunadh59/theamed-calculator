@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body style="background-color: transparent;">
+    <label class="switch" onclick="change()">
+        <input type="checkbox">
+        <span class="slider round"></span>
+    </label>    
+    <label class="dark">Light Mode</label>  
+    <div class="cal">
+        <div class="display">
+                <p id="result"></p>
+        </div>
+        <div class="button">
+            <button id="1" onclick="addToScreen('1')">1</button>
+            <button id="2" onclick="addToScreen('2')">2</button>
+            <button id="3" onclick="addToScreen('3')">3</button>
+            <button id="+" onclick="addToScreen('+')">+</button><br>
+            <button id="4" onclick="addToScreen('4')">4</button>
+            <button id="5" onclick="addToScreen('5')">5</button>
+            <button id="6" onclick="addToScreen('6')">6</button>
+            <button id="-" onclick="addToScreen('-')">-</button><br>
+            <button id="7" onclick="addToScreen('7')">7</button>
+            <button id="8" onclick="addToScreen('8')">8</button>
+            <button id="9" onclick="addToScreen('9')">9</button>
+            <button id="*" onclick="addToScreen('*')">*</button><br>
+            <button id="=" onclick="calculate()">=</button>
+            <button id="0" onclick="addToScreen('0')">0</button>
+            <button id="." onclick="addToScreen('.')">.</button>
+            <button id="/" onclick="addToScreen('/')">/</button><br>
+            <button id="clr" onclick="clearScreen()">Clear</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
